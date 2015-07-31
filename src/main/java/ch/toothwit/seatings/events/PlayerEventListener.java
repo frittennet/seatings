@@ -8,8 +8,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.vehicle.VehicleExitEvent;
-import org.spigotmc.event.entity.EntityDismountEvent;
-
 import ch.toothwit.seatings.main.Seat;
 import ch.toothwit.seatings.main.Seatings;
 
@@ -29,12 +27,5 @@ public class PlayerEventListener implements Listener
 			}
 		}
 		
-	}
-	
-	@EventHandler
-	public void onVehicleExitEvent(VehicleExitEvent event){ 
-		Seatings.get().removeSeat(event.getExited().getUniqueId().toString()); 
-		Bukkit.broadcastMessage(event.getExited().getName());
-	}
-			
+	}			
 }

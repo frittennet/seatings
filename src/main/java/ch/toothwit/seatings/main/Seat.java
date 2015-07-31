@@ -49,6 +49,6 @@ public class Seat {
 		}
 		
 		arrow.setPassenger(player);
-		Seatings.get().addSeat(player.getUniqueId().toString(), this); 
+		Seatings.get().addSeat(arrow.getUniqueId().toString(), this); 
 	}
 }
