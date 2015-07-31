@@ -1,0 +1,5 @@
+name: Seatings
+main: ch.toothwit.seatings.main.Seatings
+version: 1.0
+author: Houston9000, fredo121
+description: Seating Plugin using Spigot API 
